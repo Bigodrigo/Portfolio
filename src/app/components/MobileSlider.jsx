@@ -22,7 +22,7 @@ const MobileSlider = () => {
       <div className="relative flex justify-center p-4">
         <FaArrowCircleLeft
           size={50}
-          className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]"
+          className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
           onClick={prevSlide}
         />
         <Image
@@ -33,19 +33,25 @@ const MobileSlider = () => {
           className="ml-28"
           style={{ objectFit: "cover" }}
         />
-        <div className="w-900 h-640 bg-palet-two-qui ml-10 mr-28 py-12">
-            <h4 className="text-3xl font-bold p-4 text-palet-two-pri text-center">{MobileData[current].title}</h4>
-            <p className="text-xl  p-4 text-palet-two-pri ">{MobileData[current].description}</p>
-            <p className="text-xl  p-4 text-palet-two-pri ">You can learn more about this at: </p>
-            <div className="text-xl p-4 text-palet-two-pri text-center">
-                <Link href={MobileData[current].url} target="_blank">
-                    {MobileData[current].url}
-                </Link>
+        <div className="w-900 h-640 bg-palet-two-qua ml-10 mr-28 py-24 px-5 text-justify flex flex-col justify-center rounded-2xl">
+          <h4 className="text-3xl font-bold p-4 text-palet-two-pri text-center">
+            {MobileData[current].title}
+          </h4>
+          <p className="text-xl p-4 text-palet-two-pri">
+            {MobileData[current].description}
+          </p>
+          <div className="flex flex-col items-center mt-auto">
+            <p className="text-xl p-4 text-palet-two-pri">You can learn more about this at:</p>
+            <div className="text-xl p-4 text-palet-two-qui text-center">
+              <Link href={MobileData[current].url} target="_blank">
+                {MobileData[current].url}
+              </Link>
             </div>
+          </div>
         </div>
         <FaArrowCircleRight
           size={50}
-          className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]"
+          className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
           onClick={nextSlide}
         />
       </div>
