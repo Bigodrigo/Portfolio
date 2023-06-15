@@ -6,7 +6,7 @@ const Contact = () => {
         <div className="bg-palet-two-sec p-8 rounded-3xl mt-24 max-w-[1240px] mx-auto">
             <h2 className="text-3xl font-bold mb-4 text-palet-two-qua ">Contact</h2>
             <div className="bg-palet-two-ter p-8 rounded-2xl my-4">
-                <h3 className="text-2xl font-bold mb-4 ">Let's work together</h3>
+                <h3 className="text-2xl font-bold mb-4 ">Let&apos;s work together</h3>
                 <div className="flex gap-8 justify-center">
                     <div className="w-900 h-640 bg-palet-two-qua p-8 text-justify flex flex-col justify-center rounded-xl">
                         <form className='max-w-[600px] m-auto'>
