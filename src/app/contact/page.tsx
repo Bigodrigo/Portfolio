@@ -15,7 +15,7 @@ const Contact = () => {
                                 <input className='border shadow-lg p-3 rounded-xl' type="email" placeholder='Email' />
                             </div>
                             <input className='border shadow-lg p-3 w-full my-2 rounded-xl' type="text" placeholder='Subject' />
-                            <textarea className='border shadow-lg p-3 w-full' cols="30" rows="10" placeholder='Message'></textarea>
+                            <textarea className='border shadow-lg p-3 w-full' cols={30} rows={10} placeholder='Message'></textarea>
                             <button className='border-0 shadow-lg p-3 w-full mt-2 bg-palet-two-ter text-2xl font-bold rounded-xl'>Submit</button>
                         </form>
                     </div>
