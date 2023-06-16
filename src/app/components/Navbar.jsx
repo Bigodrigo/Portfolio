@@ -1,8 +1,10 @@
 'use client'
 
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import icon from '../icon.png'
 
 const Navbar = () => {
     const [nav,setNav] = useState(false);
@@ -15,7 +17,7 @@ const Navbar = () => {
 
     useEffect (()=> {
         const changeColor = () => {
-            if (window.scrollY >= 870) {
+            if (window.scrollY >= 700) {
                 setColor('#fff');
                 setTextColor('#000');
             } else {
@@ -29,9 +31,10 @@ const Navbar = () => {
     return (
         <div style={{backgroundColor: `${color}`}} className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-palet-two-qua">
-                <Link href='/'>
-                    <h1 style={{color: `${textColor}`}} className="font-bold text-4xl">Rodrigo&apos;s Portfolio</h1>
-                </Link>
+            <Link href="/" className="flex items-center">
+                <Image alt="under construction" src={icon} height={40} width={40} />
+                <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl ml-2">Rodrigo&apos;s Portfolio</h1>
+            </Link>
                 <ul style={{color: `${textColor}`}} className="hidden sm:flex">
                     <li className="p-4">
                         <Link href='/'>Home</Link>
