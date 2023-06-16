@@ -25,27 +25,33 @@ const MobileSlider = () => {
           className="absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
           onClick={prevSlide}
         />
-        <Image
-          src={MobileData[current].image}
-          alt="/"
-          width={360}
-          height={640}
-          className="ml-28"
-          style={{ objectFit: "cover" }}
-        />
-        <div className="w-900 h-640 bg-palet-two-qua ml-10 mr-28 py-24 px-5 text-justify flex flex-col justify-center rounded-2xl">
-          <h4 className="text-3xl font-bold p-4 text-palet-two-pri text-center">
-            {MobileData[current].title}
-          </h4>
-          <p className="text-xl p-4 text-palet-two-pri">
-            {MobileData[current].description}
-          </p>
-          <div className="flex flex-col items-center mt-auto">
-            <p className="text-xl p-4 text-palet-two-pri">You can learn more about this at:</p>
-            <div className="text-xl p-4 text-palet-two-qui text-center">
-              <Link href={MobileData[current].url} target="_blank">
-                {MobileData[current].url}
-              </Link>
+        <div className="flex flex-col xl:flex-row">
+          <div className="xl:w-2/5 xl:ml-28 mx-auto">
+            <Image
+              src={MobileData[current].image}
+              alt="/"
+              width={360}
+              height={640}
+              // className="ml-28"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+          <div className="w-full xl:w-3/5 bg-palet-two-qua py-24 px-5 text-justify flex flex-col justify-center rounded-2xl xl:mx-4 xl:my-0 mt-10 xl:mt-0 xl:mr-28">
+            <h4 className="text-3xl font-bold p-4 text-palet-two-pri text-center">
+              {MobileData[current].title}
+            </h4>
+            <p className="text-xl p-4 text-palet-two-pri">
+              {MobileData[current].description}
+            </p>
+            <div className="flex flex-col items-center mt-auto">
+              <p className="text-xl p-4 text-palet-two-pri">
+                You can learn more about this at:
+              </p>
+              <div className="text-xl p-4 text-palet-two-qui text-center">
+                <Link href={MobileData[current].url} target="_blank">
+                  {MobileData[current].url}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
