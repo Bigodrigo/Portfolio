@@ -18,7 +18,7 @@ const MobileSlider = () => {
   };
 
   return (
-    <div className="max-w-[1240px] mx-auto">
+    <div className="w-full xl:max-w-[1240px] mx-auto">
       <div className="relative flex justify-center p-2 xl:p-4">
         <FaArrowCircleLeft
           size={50}

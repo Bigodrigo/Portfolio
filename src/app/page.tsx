@@ -12,7 +12,7 @@ export default function Home() {
         desktopClass="text-5xl"
         mobileClass="text-2xl my-4 py-4"
       />
-      <Projects desktopClass="my-4" mobileClass="my-2" />
+      <Projects desktopClass="my-4" mobileClass="my-4" />
     </main>
   );
 }
