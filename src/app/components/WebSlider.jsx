@@ -40,7 +40,8 @@ const WebSlider = () => {
             {WebData[current].description}
             </p>
             <div className="flex flex-col items-center mt-auto">
-            <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">You can visit this project at:</p>
+            {/* <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">You can visit this project at:</p> */}
+            <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">Você pode visitar o projeto em:</p>
             <div className="text-lg xl:text-xl p-1 xl:p-2 text-palet-two-qui text-center">
                 <Link href={WebData[current].deploy} target="_blank">
                 {WebData[current].deploy}
@@ -48,7 +49,8 @@ const WebSlider = () => {
             </div>
             </div>
             <div className="flex flex-col items-center mt-auto">
-            <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">You can learn more about this at:</p>
+            {/* <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">You can learn more about this at:</p> */}
+            <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">Você pode entender melhor sobre o projeto em:</p>
             <div className="text-lg xl:text-xl p-1 xl:p-2 text-palet-two-qui text-center">
                 <Link href={WebData[current].git} target="_blank">
                 {WebData[current].git}

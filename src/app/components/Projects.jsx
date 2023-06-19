@@ -8,15 +8,15 @@ const Projects = ({ desktopClass, mobileClass }) => {
       id="projects"
       className={`flex flex-col items-center bg-palet-two-sec ${desktopClass} sm:${mobileClass} p-2 xl:p-4 rounded-3xl`}
     >
-      <h2 className="text-xl xl:text-3xl font-bold mb-0 xl:mb-4 text-palet-two-qua">Projects</h2>
+      <h2 className="text-xl xl:text-3xl font-bold mb-0 xl:mb-4 text-palet-two-qua">Projetos</h2>
       <div className="my-4 bg-palet-two-ter p-2 xl:p-4 w-full rounded-2xl">
-        <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4">Mobile App Projects</h3>
+        <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4">Projetos Mobile</h3>
         <div className="flex gap-4 justify-center">
           <MobileSlider />
         </div>
       </div>
       <div className="my-4 bg-palet-two-ter p-2 xl:p-4 w-full rounded-2xl">
-        <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4">Website Projects</h3>
+        <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4">Projetos de Website</h3>
         <div className="flex gap-4 justify-center">
           <WebSlider />
         </div>

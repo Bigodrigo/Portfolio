@@ -40,16 +40,16 @@ const Navbar = () => {
                         <Link href='/'>Home</Link>
                     </li>
                     <li className="p-4">
-                        <Link href='/#projects'>Projects</Link>
+                        <Link href='/#projects'>Projetos</Link>
                     </li>
                     <li className="p-4">
-                        <Link href='/about'>About Me</Link>
+                        <Link href='/about'>Sobre Mim</Link>
                     </li>
                     <li className="p-4">
-                        <Link href='/about/#work'>Previous Experience</Link>
+                        <Link href='/about/#work'>Experiência Profissional</Link>
                     </li>
                     <li className="p-4">
-                        <Link href='/contact'>Contact</Link>
+                        <Link href='/contact'>Contato</Link>
                     </li>
                 </ul>
 
@@ -69,16 +69,16 @@ const Navbar = () => {
                             <Link href='/'>Home</Link>
                         </li>
                         <li onClick={handleNav} className="p-4 text-4xl hover:text-palet-two-qui">
-                            <Link href='/#projects'>Projects</Link>
+                            <Link href='/#projects'>Projetos</Link>
                         </li>
                         <li onClick={handleNav} className="p-4 text-4xl hover:text-palet-two-qui">
-                            <Link href='/about'>About Me</Link>
+                            <Link href='/about'>Sobre Mim</Link>
                         </li>
                         <li onClick={handleNav} className="p-4 text-4xl hover:text-palet-two-qui">
-                            <Link href='/about/#work'>Works</Link>
+                            <Link href='/about/#work'>Experiência Profissional</Link>
                         </li>
                         <li onClick={handleNav} className="p-4 text-4xl hover:text-palet-two-qui">
-                            <Link href='/contact'>Contact</Link>
+                            <Link href='/contact'>Contato</Link>
                         </li>
                     </ul>
                 </div>

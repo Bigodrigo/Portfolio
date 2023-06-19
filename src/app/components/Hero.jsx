@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image'
+import Link from "next/link";
 import profilePic from '../assets/profile.jpg'
 
 const Hero = ({ heading, message, desktopClass, mobileClass }) => {
@@ -17,7 +18,9 @@ const Hero = ({ heading, message, desktopClass, mobileClass }) => {
           <div className="p-5 text-palet-two-qua mt-5 sm:mt-0 sm:ml-10">
             <h2 className="text-3xl xl:text-5xl font-bold">{heading}</h2>
             <p className="py-5 text-lg xl:text-xl">{message}</p>
-            <button className="px-8 py-2 border text-xl xl:text-3xl">About Me</button>
+            <Link href="/about" className="px-8 py-2 border text-xl xl:text-3xl">
+              Sobre Mim
+            </Link>
           </div>
         </div>
       </div>

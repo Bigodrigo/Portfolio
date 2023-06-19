@@ -13,12 +13,22 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs.send('service_2trilfn', 'template_oangw0e', {
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error('One or more environment variables are missing.');
+      // Handle the error case
+      return;
+    }
+
+    emailjs.send(serviceId, templateId, {
       email: email,
       message: message,
       name: name,
       subject: subject,
-    }, '6H2RLuSX53E_S6ntO')
+    }, publicKey)
       .then((response) => {
         console.log('Email sent successfully:', response.text);
       })
@@ -31,9 +41,10 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center bg-palet-two-pri min-h-screen">
       <div className="bg-palet-two-sec p-2 xl:p-4 rounded-3xl mt-24 max-w-[1240px] mx-auto">
-        <h2 className="text-xl xl:text-3xl font-bold mb-0 xl:mb-4 text-palet-two-qua text-center">Contact</h2>
+        <h2 className="text-xl xl:text-3xl font-bold mb-0 xl:mb-4 text-palet-two-qua text-center">Contato</h2>
         <div className="bg-palet-two-ter p-2 xl:p-4 rounded-2xl my-2 xl:my-4">
-          <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4 ml-4 xl:ml-0">Let&apos;s work together</h3>
+          {/* <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4 ml-4 xl:ml-0">Let&apos;s work together</h3> */}
+          <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4 ml-4 xl:ml-0">Entre em contato:</h3>
           <div className="flex gap-8 justify-center">
             <div className="bg-palet-two-qua p-2 xl:p-4 text-justify flex flex-col justify-center rounded-xl">
               <form className="max-w-[600px] m-auto" onSubmit={handleSubmit}>
@@ -72,7 +83,7 @@ const Contact = () => {
                   className="border-0 shadow-lg p-2 xl:p-4 w-full mt-2 bg-palet-two-ter text-2xl font-bold rounded-xl"
                   type="submit"
                 >
-                  Submit
+                  Enviar
                 </button>
               </form>
             </div>
