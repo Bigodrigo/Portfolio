@@ -1,3 +1,9 @@
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Sobre',
+}
+
 export default function AboutMe() {
   return (
     <div className="flex flex-col items-center bg-palet-two-pri min-h-screen">
