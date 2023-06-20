@@ -2,6 +2,9 @@
 
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -30,15 +33,36 @@ const Contact = () => {
     }, publicKey)
       .then((response) => {
         console.log('Email sent successfully:', response.text);
+        toast.success('Email sent successfully!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
       })
       .catch((error) => {
         console.error('Error sending email:', error);
+        toast.error('Error sending email!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
       });
     
   };
 
   return (
     <div className="flex flex-col items-center bg-palet-two-pri min-h-screen">
+      <ToastContainer />
       <div className="bg-palet-two-sec p-2 xl:p-4 rounded-3xl mt-24 max-w-[1240px] mx-auto">
         <h2 className="text-xl xl:text-3xl font-bold mb-0 xl:mb-4 text-palet-two-qua text-center">Contato</h2>
         <div className="bg-palet-two-ter p-2 xl:p-4 rounded-2xl my-2 xl:my-4">
