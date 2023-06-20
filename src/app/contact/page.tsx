@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
