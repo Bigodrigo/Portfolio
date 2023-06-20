@@ -2,11 +2,7 @@
 
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { Metadata } from 'next'
- 
-export const metadata: Metadata = {
-  title: 'Contato',
-}
+
 
 const Contact = () => {
   const [name, setName] = useState('');
