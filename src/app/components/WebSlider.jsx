@@ -19,41 +19,41 @@ const WebSlider = () => {
 
   return (
     <div className="w-full xl:max-w-[1240px] mx-auto">
-      <div className="relative flex justify-center p-2 xl:p-4">
+      <div className="w-full relative flex justify-center p-2 xl:p-4">
         <FaArrowCircleLeft
           size={50}
-          className="absolute top-[50%] left-[16px] xl:left-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
+          className="absolute top-[40%] left-[16px] xl:left-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
           onClick={prevSlide}
         />
-        <div className="flex flex-col items-center px-10 xl:px-24">
+        <div className="w-full flex flex-col items-center sm:px-10 xl:px-24">
           <Image
             src={WebData[current].image}
             alt="/"
             width={960}
             height={540}
           />
-          <div className="bg-palet-two-qua m-4 xl:m-8 p-2 xl:p-4 text-justify flex flex-col justify-center rounded-2xl">
-            <h4 className="text-xl xl:text-3xl font-bold p-2 xl:p-4 text-palet-two-pri text-center">
+          <div className="w-full  bg-palet-two-qua m-4 lg:m-8 p-2 lg:p-4 text-justify flex flex-col justify-center rounded-2xl">
+            <h4 className="text-sm xs:text-xl lg:text-2xl xl:text-3xl font-bold p-2 xl:p-4 text-palet-two-pri text-center">
               {WebData[current].title}
             </h4>
-            <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">
+            <p className="text-xs xs:text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">
               {WebData[current].description}
             </p>
             <div className="flex flex-col items-center mt-auto">
-              <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">
+              <p className="text-xs xs:text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">
                 Você pode visitar o projeto em:
               </p>
-              <div className="text-lg xl:text-xl p-1 xl:p-2 text-palet-two-qui text-center">
+              <div className="text-xs xs:text-lg xl:text-xl p-1 xl:p-2 text-palet-two-qui text-center">
                 <Link href={WebData[current].deploy} target="_blank">
                   {WebData[current].deploy}
                 </Link>
               </div>
             </div>
             <div className="flex flex-col items-center mt-auto">
-              <p className="text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri">
+              <p className="text-xs xs:text-lg xl:text-xl p-2 xl:p-4 text-palet-two-pri mx-2 xs:mx-auto">
                 Você pode entender melhor sobre o projeto em:
               </p>
-              <div className="text-lg xl:text-xl p-1 xl:p-2 text-palet-two-qui text-center">
+              <div className="text-xs xs:text-lg xl:text-xl p-1 xl:p-2 text-palet-two-qui text-center">
                 <Link href={WebData[current].git} target="_blank">
                   {WebData[current].git}
                 </Link>
@@ -63,7 +63,7 @@ const WebSlider = () => {
         </div>
         <FaArrowCircleRight
           size={50}
-          className="absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
+          className="absolute top-[40%] right-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
           onClick={nextSlide}
         />
       </div>
