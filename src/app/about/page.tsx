@@ -1,4 +1,8 @@
 import { Metadata } from 'next'
+import Image from 'next/image';
+import analyst from '../assets/analyst.png'
+import intern from '../assets/intern.png'
+import lab from '../assets/lab.png'
  
 export const metadata: Metadata = {
   title: 'Sobre',
@@ -55,26 +59,47 @@ export default function AboutMe() {
           <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4 ml-4 xl:ml-0">Experiência Profissional</h3>
           <div className="flex gap-8 justify-center">
             <div className="bg-palet-two-qua p-2 xl:p-4 text-justify flex flex-col justify-center rounded-xl">
-              <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
-                Estagiário - IPE Saúde - nov 2022 - atual
-              </h4>
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <Image src={intern} alt="" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
+                </div>
+                <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
+                  Estagiário - IPE Saúde - nov 2022 - atual
+                </h4>
+              </div>
               <p className="text-sm sm:text-xl xl:text-xl p-4 text-palet-two-pri first-line-indent">
                 Construimos um protótipo de aplicativo, que utilizando APIs verifica os segurados do IPE, monta um BD, permite notificações (push) e envia dados por NFC. Utilizamos as tecnologias mais atuais, como React-Native, Firebase, Next JS e características de Metodologias Ágeis.
               </p>
-              <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
-                Analista - MAXIQUIM - fev 2022 - jun 2022
-              </h4>
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <Image src={analyst} alt="" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
+                </div>
+                <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
+                  Analista - MAXIQUIM - fev 2022 - jun 2022
+                </h4>
+              </div>
               <p className="text-sm sm:text-xl xl:text-xl p-4 text-palet-two-pri first-line-indent">
-                Realizamos uma pesquisa de mercado no segmento de polímeros, conversando com mais de 150 empresas, sobre o processo de produção, seus fornecedores, matéria prima entre outros. Esta experiência aprimorou minha habilidade de comunicação e criatividade estratégica.              </p>
-              <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
-                Estagiário - LUFTECH SOLUÇÕES AMBIENTAIS - jan 2019 - dez 2019
-              </h4>
+                Realizamos uma pesquisa de mercado no segmento de polímeros, conversando com mais de 150 empresas, sobre o processo de produção, seus fornecedores, matéria prima entre outros. Esta experiência aprimorou minha habilidade de comunicação e criatividade estratégica.
+              </p>
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <Image src={intern} alt="" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
+                </div>
+                <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
+                  Estagiário - LUFTECH SOLUÇÕES AMBIENTAIS - jan 2019 - dez 2019
+                </h4>
+              </div>
               <p className="text-sm sm:text-xl xl:text-xl p-4 text-palet-two-pri first-line-indent">
                 A partir de novas referências de resíduos sólidos e de saúde, atualizei as estimativas da geração de gases, poder calorífico dos resíduos, temperaturas de combustão e consumo de combustível. Fui responsável no projeto de uma estação compacta de efluentes domésticos para uma rede de hotéis e acompanhei a instalação de uma estação semelhante.
               </p>
-              <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
-                Bolsista de Iniciação Cientifica - UFRGS - jul 2014 - dez 2015
-              </h4>
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <Image src={lab} alt="" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
+                </div>
+                <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
+                  Bolsista de Iniciação Cientifica - UFRGS - jul 2014 - dez 2015
+                </h4>
+              </div>
               <p className="text-sm sm:text-xl xl:text-xl p-4 text-palet-two-pri first-line-indent">
                 Pesquisa sobre uma técnica alternativa para determinar o índice de acidez no biodiesel. O trabalho obteve o prêmio de destaque no XVII SIC da UFRGS.
               </p>

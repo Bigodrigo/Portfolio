@@ -36,7 +36,7 @@ const MobileSlider = () => {
               style={{ objectFit: "cover" }}
             />
           </div>
-          <div className="h-auto lg:h-full w-full xs:w-full xs:mx-auto lg:w-3/5 bg-palet-two-qua py-12 lg:py-24 px-2 lg:px-4 text-justify flex flex-col justify-center rounded-2xl lg:mx-4 lg:my-0 mt-10 lg:mt-0 lg:mr-14 xl:mr-28">
+          <div className="h-auto lg:h-full w-full xs:w-full xs:mx-auto lg:w-3/5 bg-palet-two-qua py-4 lg:py-24 px-2 lg:px-4 text-justify flex flex-col justify-center rounded-2xl lg:mx-4 lg:my-0 mt-10 lg:mt-0 lg:mr-14 xl:mr-28">
             <h4 className="text-sm xs:text-xl lg:text-2xl xl:text-3xl font-bold p-2 xl:p-4 text-palet-two-pri text-center">
               {MobileData[current].title}
             </h4>

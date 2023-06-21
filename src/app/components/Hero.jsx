@@ -5,7 +5,7 @@ import profilePic from '../assets/profile.jpg'
 
 const Hero = ({ heading, message, desktopClass, mobileClass }) => {
   return (
-    <div className={`flex items-center justify-center h-screen bg-fixed bg-center bg-cover custom-img ${mobileClass} lg:${desktopClass}`}>
+    <div className={`flex items-center justify-center h-screen ${mobileClass} lg:${desktopClass}`}>
       {/* {Overlay} */}
       <div className="flex flex-col lg:flex-row items-center lg:justify-between content-between max-w-screen-lg mx-auto">
         <div className="flex items-center">
