@@ -1,20 +1,24 @@
 "use client"
 
 import React from "react";
-import Image from "next/image";
+import VideoPlayer from "./VideoPlayer";
 import Link from "next/link";
 import { MobileData } from "./MobileData";
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
 const MobileSlider = () => {
   const [current, setCurrent] = React.useState(0);
 
   const nextSlide = () => {
-    setCurrent(current === MobileData.length - 1 ? 0 : current + 1);
+    setCurrent((prevCurrent) =>
+      prevCurrent === MobileData.length - 1 ? 0 : prevCurrent + 1
+    );
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? MobileData.length - 1 : current - 1);
+    setCurrent((prevCurrent) =>
+      prevCurrent === 0 ? MobileData.length - 1 : prevCurrent - 1
+    );
   };
 
   return (
@@ -27,13 +31,10 @@ const MobileSlider = () => {
         />
         <div className="w-full flex flex-col lg:flex-row items-center">
           <div className="w-4/5 lg:w-2/5 lg:ml-14 xl:ml-28 mx-auto h-auto my-auto">
-            <Image
-              src={MobileData[current].image}
-              alt="/"
-              // width={360}
-              // height={640}
-              // className="ml-28"
-              style={{ objectFit: "cover" }}
+            <VideoPlayer
+              key={current} // Add key prop
+              src={MobileData[current].video}
+              poster={MobileData[current].thumb}
             />
           </div>
           <div className="h-auto lg:h-full w-full xs:w-full xs:mx-auto lg:w-3/5 bg-palet-two-qua py-4 lg:py-24 px-2 lg:px-4 text-justify flex flex-col justify-center rounded-2xl lg:mx-4 lg:my-0 mt-10 lg:mt-0 lg:mr-14 xl:mr-28">

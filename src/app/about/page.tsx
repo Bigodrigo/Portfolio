@@ -18,10 +18,6 @@ export default function AboutMe() {
           <div className="flex gap-8 justify-center">
             <div className="bg-palet-two-qua p-2 xl:p-4 text-justify flex flex-col justify-center rounded-xl">
               <p className="text-sm sm:text-xl xl:text-xl p-4 text-palet-two-pri first-line-indent">
-                Sou uma pessoa bastante comunicativa, apaixonado por música e tecnologia, com uma personalidade inquieta,
-                sempre em busca de soluções profissionais rápidas que mantenham uma qualidade satisfatória.
-              </p>
-              <p className="text-sm sm:text-xl xl:text-xl p-4 text-palet-two-pri first-line-indent">
                 Iniciei na Licenciatura em Química, onde pude desenvolver minha criatividade e habilidades sociais,
                 esta experiência foi fundamental para minha organização pessoal e me ensinou a trabalhar junto a
                 profissionais de outras áreas na construção de oficinas e atividades.
@@ -49,7 +45,7 @@ export default function AboutMe() {
               <p className="text-sm sm:text-xl xl:text-xl p-4 text-palet-two-pri first-line-indent">
                 Em minha experiência mais recente construímos um protótipo de aplicativo que utilizando APIs verifica os
                 segurados da companhia, monta um Banco de Dados, permite notificações (push) e envia dados por NFC.
-                Utilizamos as tecnologias mais atuais como React-Native, Firebase Next JS e algumas características de
+                Utilizamos as tecnologias mais atuais como React-Native, Firebase, Next JS e algumas características de
                 Metodologias Ágeis.
               </p>
             </div>
