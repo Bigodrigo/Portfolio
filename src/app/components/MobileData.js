@@ -1,7 +1,7 @@
 export const MobileData = [
   {
     image: '/assets/App.gif',
-    video: '/assets/TaskApp.webm',
+    video: '/assets/TaskApp.mp4',
     thumb: '/assets/TaskAppThumb.png',
     title: 'Firebase Tasks App',
     // description: "This Android application is designed to effectively manage an individual's to-do tasks. The account registration system and login functionality are supported by the Firebase platform.",
@@ -10,7 +10,7 @@ export const MobileData = [
   },
   {
     image: '/assets/Saude-App.gif',
-    video: '/assets/SaudeApp.webm',
+    video: '/assets/SaudeApp.mp4',
     thumb: '/assets/SaudeAppThumb.png',
     title: 'Saúde App',
     // description: 'This project is an application designed for health plans. It specifically facilitates the transmission of information through the utilization of a virtual card via NFC and permits the reception of personalized notifications.',
