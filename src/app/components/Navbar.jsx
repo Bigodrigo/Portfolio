@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-palet-two-qua">
             <Link href="/" className="flex items-center">
                 <Image alt="under construction" src={icon} height={40} width={40} className="rounded-full" />
-                <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl ml-2">Rodrigo&apos;s Portfolio</h1>
+                <h1 style={{ color: `${textColor}` }} className="font-bold text-xl lg:text-3xl xl:text-5xl ml-2">Rodrigo&apos;s Portfolio</h1>
             </Link>
                 <ul style={{color: `${textColor}`}} className="hidden sm:flex">
                     <li className="p-4">
