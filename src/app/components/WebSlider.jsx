@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react";
-import Image from "next/image";
+import VideoPlayer from "./VideoPlayer";
 import Link from "next/link";
 import { WebData } from "./WebData";
 import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
@@ -10,11 +10,15 @@ const WebSlider = () => {
   const [current, setCurrent] = React.useState(0);
 
   const nextSlide = () => {
-    setCurrent(current === WebData.length - 1 ? 0 : current + 1);
+    setCurrent((prevCurrent) =>
+      prevCurrent === WebData.length - 1 ? 0 : prevCurrent + 1
+    );
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? WebData.length - 1 : current - 1);
+    setCurrent((prevCurrent) =>
+      prevCurrent === 0 ? WebData.length - 1 : prevCurrent - 1
+    );
   };
 
   return (
@@ -26,12 +30,13 @@ const WebSlider = () => {
           onClick={prevSlide}
         />
         <div className="w-full flex flex-col items-center sm:px-10 xl:px-24">
-          <Image
-            src={WebData[current].image}
-            alt="/"
-            width={960}
-            height={540}
-          />
+          <div className="mx-auto h-auto my-auto">
+            <VideoPlayer
+              key={current} // Add key prop
+              src={WebData[current].video}
+              // poster={WebData[current].thumb}
+            />
+          </div>
           <div className="w-full  bg-palet-two-qua m-4 lg:m-8 p-2 lg:p-4 text-justify flex flex-col justify-center rounded-2xl">
             <h4 className="text-sm xs:text-xl lg:text-2xl xl:text-3xl font-bold p-2 xl:p-4 text-palet-two-pri text-center">
               {WebData[current].title}
