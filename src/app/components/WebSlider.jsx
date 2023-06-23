@@ -34,7 +34,7 @@ const WebSlider = () => {
             <VideoPlayer
               key={current} // Add key prop
               src={WebData[current].video}
-              // poster={WebData[current].thumb}
+              poster={WebData[current].thumb}
             />
           </div>
           <div className="w-full  bg-palet-two-qua m-4 lg:m-8 p-2 lg:p-4 text-justify flex flex-col justify-center rounded-2xl">

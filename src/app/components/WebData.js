@@ -1,6 +1,7 @@
 export const WebData = [
   {
     video: '/assets/RocketPay.mp4',
+    thumb: '/assets/RocketPayThumb.png',
     title: 'RocketPay',
     // description: "Rocketpay is a software feature that imitates the credit card data entry form, providing a practical way to include input mask and dynamically update HTML elements through the Document Object Model (DOM).",
     description: "O Rocketpay é um componente que simula o formulário de preenchimento de cartão de crédito, onde é possível adicionar máscara aos inputs e atualizar elementos HTML via DOM.",
@@ -9,6 +10,7 @@ export const WebData = [
   },
   {
     video: '/assets/SaudeWeb.mp4',
+    thumb: '/assets/SaudeWebThumb.png',
     // title: 'Saúde Web Notifications',
     title: 'Saúde Web',
     // description: 'This project is a website that facilitates the sending of customized messages to a mobile phone that has the Saúde App installed.',
