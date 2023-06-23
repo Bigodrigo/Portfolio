@@ -1,6 +1,5 @@
 export const MobileData = [
   {
-    image: '/assets/App.gif',
     video: '/assets/TaskApp.mp4',
     thumb: '/assets/TaskAppThumb.png',
     title: 'Firebase Tasks App',
@@ -9,7 +8,6 @@ export const MobileData = [
     git: 'https://github.com/Bigodrigo/TasksFirebase',
   },
   {
-    image: '/assets/Saude-App.gif',
     video: '/assets/SaudeApp.mp4',
     thumb: '/assets/SaudeAppThumb.png',
     title: 'Saúde App',
