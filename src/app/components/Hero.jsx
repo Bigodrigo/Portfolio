@@ -1,9 +1,11 @@
 import React from "react";
 import Image from 'next/image'
 import Link from "next/link";
-import profilePic from '../assets/profile.jpg'
+
 
 const Hero = ({ heading, message, desktopClass, mobileClass }) => {
+  const profilePic = '/assets/profile.jpg'
+
   return (
     <div className={`flex items-center justify-center h-screen ${mobileClass} lg:${desktopClass}`}>
       {/* {Overlay} */}
@@ -11,7 +13,7 @@ const Hero = ({ heading, message, desktopClass, mobileClass }) => {
         <div className="flex items-center">
           <div className="h-64 w-64 lg:w-96 lg:h-96 rounded-full overflow-hidden">
             <div className="rounded-full">
-              <Image src={profilePic} alt="" className="object-cover w-full h-full" />
+              <Image src={profilePic} alt="Rodrigo's photo" className="object-cover w-full h-full" />
             </div>
           </div>
         </div>

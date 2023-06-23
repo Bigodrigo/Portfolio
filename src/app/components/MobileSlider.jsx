@@ -26,7 +26,7 @@ const MobileSlider = () => {
       <div className="w-full relative flex justify-center p-2 xl:p-4">
         <FaArrowCircleLeft
           size={50}
-          className="absolute top-[60%] sm:top-[50%] left-[16px] xl:left-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
+          className="absolute top-[40%] sm:top-[50%] left-[16px] xl:left-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
           onClick={prevSlide}
         />
         <div className="w-full flex flex-col lg:flex-row items-center">
@@ -58,7 +58,7 @@ const MobileSlider = () => {
         </div>
         <FaArrowCircleRight
           size={50}
-          className="absolute top-[60%] sm:top-[50%] right-[16px] xl:right-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
+          className="absolute top-[40%] sm:top-[50%] right-[16px] xl:right-[30px] text-white/70 cursor-pointer select-none z-[2] text-palet-two-sec"
           onClick={nextSlide}
         />
       </div>

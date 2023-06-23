@@ -63,24 +63,24 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center bg-palet-two-pri min-h-screen">
       <ToastContainer />
-      <div className="bg-palet-two-sec p-2 xl:p-4 rounded-3xl mt-24 max-w-[1240px] mx-auto">
+      <div className="bg-palet-two-sec p-2 sm:p-4 lg:p-8 rounded-3xl mt-24 max-w-[1240px] mx-auto">
         <h2 className="text-xl xl:text-3xl font-bold mb-0 xl:mb-4 text-palet-two-qua text-center">Contato</h2>
-        <div className="bg-palet-two-ter p-2 xl:p-4 rounded-2xl my-2 xl:my-4">
+        <div className="bg-palet-two-ter p-2 sm:p-4 lg:p-8 rounded-2xl my-2 xl:my-4">
           {/* <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4 ml-4 xl:ml-0">Let&apos;s work together</h3> */}
           <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4 ml-4 xl:ml-0">Entre em contato:</h3>
           <div className="flex gap-8 justify-center">
-            <div className="bg-palet-two-qua p-2 xl:p-4 text-justify flex flex-col justify-center rounded-xl">
+            <div className="bg-palet-two-qua p-2 sm:p-4 lg:p-8 text-justify flex flex-col justify-center rounded-xl">
               <form className="max-w-[600px] m-auto" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-2 gap-2">
                   <input
-                    className="border shadow-lg p-2 xl:p-4 rounded-xl"
+                    className="border shadow-lg p-2 sm:p-4 lg:p-8 rounded-xl"
                     type="text"
                     placeholder="Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
                   <input
-                    className="border shadow-lg p-2 xl:p-4 rounded-xl"
+                    className="border shadow-lg p-2 sm:p-4 lg:p-8 rounded-xl"
                     type="email"
                     placeholder="Email"
                     value={email}
@@ -88,14 +88,14 @@ const Contact = () => {
                   />
                 </div>
                 <input
-                  className="border shadow-lg p-2 xl:p-4 w-full my-2 rounded-xl"
+                  className="border shadow-lg p-2 sm:p-4 lg:p-8 w-full my-2 rounded-xl"
                   type="text"
                   placeholder="Subject"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                 />
                 <textarea
-                  className="border shadow-lg p-2 xl:p-4 w-full"
+                  className="border shadow-lg p-2 sm:p-4 lg:p-8 w-full"
                   cols={30}
                   rows={10}
                   placeholder="Message"
@@ -103,7 +103,7 @@ const Contact = () => {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 <button
-                  className="border-0 shadow-lg p-2 xl:p-4 w-full mt-2 bg-palet-two-ter text-2xl font-bold rounded-xl"
+                  className="border-0 shadow-lg p-2 sm:p-4 lg:p-8 w-full mt-2 bg-palet-two-ter text-2xl font-bold rounded-xl"
                   type="submit"
                 >
                   Enviar

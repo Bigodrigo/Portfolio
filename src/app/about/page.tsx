@@ -1,22 +1,23 @@
 import { Metadata } from 'next'
 import Image from 'next/image';
-import analyst from '../assets/analyst.png'
-import intern from '../assets/intern.png'
-import lab from '../assets/lab.png'
  
 export const metadata: Metadata = {
   title: 'Sobre',
 }
 
 export default function AboutMe() {
+  const  analyst = '/assets/analyst.png'
+  const  intern = '/assets/intern.png'
+  const  lab = '/assets/lab.png'
+
   return (
     <div className="flex flex-col items-center bg-palet-two-pri min-h-screen">
-      <div className="bg-palet-two-sec p-2 xl:p-4 rounded-3xl mt-24 max-w-[1240px] mx-auto">
+      <div className="bg-palet-two-sec p-2 sm:p-4 lg:p-8 rounded-3xl mt-24 max-w-[1240px] mx-auto">
         <h2 className="text-xl xl:text-3xl font-bold mb-0 xl:mb-4 text-palet-two-qua text-center">Sobre Mim</h2>
-        <div className="bg-palet-two-ter p-2 xl:p-4 rounded-2xl my-2 xl:my-4">
+        <div className="bg-palet-two-ter p-2 sm:p-4 lg:p-8 rounded-2xl my-2 xl:my-4">
           <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4 ml-4 xl:ml-0">Resumo</h3>
           <div className="flex gap-8 justify-center">
-            <div className="bg-palet-two-qua p-2 xl:p-4 text-justify flex flex-col justify-center rounded-xl">
+            <div className="bg-palet-two-qua p-2 sm:p-4 lg:p-8 text-justify flex flex-col justify-center rounded-xl">
               <p className="text-sm sm:text-xl xl:text-xl p-4 text-palet-two-pri first-line-indent">
                 Iniciei na Licenciatura em Química, onde pude desenvolver minha criatividade e habilidades sociais,
                 esta experiência foi fundamental para minha organização pessoal e me ensinou a trabalhar junto a
@@ -51,13 +52,13 @@ export default function AboutMe() {
             </div>
           </div>
         </div>
-        <div id='work' className="bg-palet-two-ter p-2 xl:p-4 rounded-2xl my-2 xl:my-4">
+        <div id='work' className="bg-palet-two-ter p-2 sm:p-4 lg:p-8 rounded-2xl my-2 xl:my-4">
           <h3 className="text-lg xl:text-xl font-bold mb-0 xl:mb-4 ml-4 xl:ml-0">Experiência Profissional</h3>
           <div className="flex gap-8 justify-center">
-            <div className="bg-palet-two-qua p-2 xl:p-4 text-justify flex flex-col justify-center rounded-xl">
+            <div className="bg-palet-two-qua p-2 sm:p-4 lg:p-8 text-justify flex flex-col justify-center rounded-xl">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <Image src={intern} alt="" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
+                  <Image src={intern} alt="intern icon" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
                 </div>
                 <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
                   Estagiário - IPE Saúde - nov 2022 - atual
@@ -68,7 +69,7 @@ export default function AboutMe() {
               </p>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <Image src={analyst} alt="" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
+                  <Image src={analyst} alt="analyst icon" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
                 </div>
                 <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
                   Analista - MAXIQUIM - fev 2022 - jun 2022
@@ -79,7 +80,7 @@ export default function AboutMe() {
               </p>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <Image src={intern} alt="" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
+                  <Image src={intern} alt="intern icon" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
                 </div>
                 <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
                   Estagiário - LUFTECH SOLUÇÕES AMBIENTAIS - jan 2019 - dez 2019
@@ -90,7 +91,7 @@ export default function AboutMe() {
               </p>
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <Image src={lab} alt="" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
+                  <Image src={lab} alt="lab icon" className="h-6 w-auto ml-6 lg:h-10 lg:ml-10 xl:h-16 xl:ml-16" />
                 </div>
                 <h4 className="text-base xl:text-xl font-bold px-4 py-1 text-palet-two-pri">
                   Bolsista de Iniciação Cientifica - UFRGS - jul 2014 - dez 2015
